@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/register.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>beautyNeils|Register</title>
+</head>
+
+
+<body>
+<div class="container" id="container">
+    <div class="form-container sign-in-container">
+        <form action="/registerUser" method="get">
+            <h1>Регистрация</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+
+            <span>или используйте свой E-mail для регистрации</span>
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="tel" placeholder="Phone" name="phone" required>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+
+
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right">
+                <h1>Ошибка</h1>
+                <p>Ваш Email или номер телефона уже используется!</p>
+                <button class="ghost" href="" >Восстановить аккаунт</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/register.js"></script>
+</body>
+</html>

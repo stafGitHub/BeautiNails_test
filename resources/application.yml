@@ -1,0 +1,22 @@
+spring.application.name: beaytu_Neils_Web-RESURCE
+
+spring:
+  mvc:
+    view:
+      prefix: templates/
+      suffix: .html
+  datasource:
+    url: jdbc:postgresql://localhost:5433/postgres
+    username: postgres
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+server:
+  port: 8080
+jwt:
+  secret: b332b4c3631edee13cfb25a504da3d06087079121f46fe645c66372664cbabc3
+  lifetime: 20000m
